@@ -1,0 +1,65 @@
+/* /* font-family: 'Pacifico', cursive; 
+font-family: 'Righteous', sans-serif;
+font-family: 'PT Sans Caption', sans-serif;
+*/
+
+h1{
+    font-size: 50px;
+    font-family: 'Pacifico', cursive;
+    position: relative;
+}
+
+ h1::after{
+   content:'';
+   width: 18%;
+   position: absolute;
+   background-color: red;
+   height:40%;
+   bottom: -5px;
+   right:610px;
+   z-index: -1;
+   transition: 1s;
+   -webkit-transition: 1s;
+   -moz-transition: 1s;
+   -ms-transition: 1s;
+   -o-transition: 1s;
+}
+
+
+ h1:hover::after{
+    height:100%;
+}
+.bookMarkTitle{
+    font-size: 25px;
+    font-family: 'Righteous', sans-serif;
+    background: linear-gradient(to right,#3ca55c,#b5ac49);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color: transparent;
+}
+.btnContent button{
+    padding: 8px 50px;
+    font-family: 'PT Sans Caption', sans-serif;
+} 
+/* /* .bookMarkForm input{
+  border:2px solid #f0f0f0;
+  border-radius: 4px ;
+  -webkit-border-radius: 4px ;
+  -moz-border-radius: 4px ;
+  -ms-border-radius: 4px ;
+  -o-border-radius: 4px ;
+  padding: 10px;
+} */
+.bookMarkForm input:focus{
+  outline:0;
+}
+/* .bookMarkForm.success  input{
+  border-color: red;
+}
+.bookMarkForm.error input{
+  border-color: green;
+}
+.bookMarkForm   .error {
+  color: red;
+  font-size: 9px;
+  height: 13px;
+} */ 
